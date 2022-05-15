@@ -18,6 +18,10 @@
   --nav-height: 7.2rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -48,12 +52,12 @@ section {
   padding-block: 10rem;
 }
 
-/*====HEADER =======================================*/
-header {
-  margin-top: calc(4.1rem + var(--nav-height));
+/*====HOME =======================================*/
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
 }
 
-header::before {
+#home::before {
   content: "";
   width: 100vw;
   height: calc(108rem + var(--nav-height));
@@ -66,21 +70,21 @@ header::before {
   z-index: -1;
 }
 
-header h1 {
+#home h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 2.4rem;
 }
 
-header h4 {
+#home h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
 
   margin-bottom: 1.6rem;
 }
 
-header p {
+#home p {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
@@ -89,7 +93,7 @@ header p {
   margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
   background-color: var(--primary-color);
   border: none;
   border-radius: 0.8rem;
@@ -113,14 +117,14 @@ header button {
   margin-left: auto;
 }
 
-header img {
+#home img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
 }
 
-.stats {
+#home .stats {
   width: 32.7rem;
   padding-block: 4rem;
   margin-inline: auto;
@@ -136,7 +140,7 @@ header img {
 
 }
 
-.stat h3 {
+#home .stat h3 {
   font-weight: 700;
   font-size: 4.8rem;
   color: var(--headline);
@@ -144,7 +148,7 @@ header img {
   margin-bottom: 0.4rem;
 }
 
-.stat p {
+#home .stat p {
   margin: 0;
   color: var(--primary-color);
   font-size: 1.6rem;
@@ -296,7 +300,7 @@ body.menu-expanded button path {
   margin-bottom: 1.6rem;
 }
 
-.cards {
+#services .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
