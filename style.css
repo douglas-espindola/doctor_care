@@ -163,9 +163,9 @@ nav {
   height: var(--nav-height);
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 100;
+  width: 100vw;
+
 }
 
 nav div.wrapper {
@@ -176,7 +176,6 @@ nav div.wrapper {
 
 nav.scroll {
   background-color: var(--primary-color);
-  width: 100vw;
 }
 
 nav.scroll svg:nth-child(1) path {
