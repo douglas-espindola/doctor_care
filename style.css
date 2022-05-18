@@ -176,7 +176,7 @@ nav div.wrapper {
 
 nav.scroll {
   background-color: var(--primary-color);
-  width: 100%;
+  width: 100vw;
 }
 
 nav.scroll svg:nth-child(1) path {
@@ -200,7 +200,7 @@ body.menu-expanded {
 }
 
 body.menu-expanded> :not(nav) {
-  display: none;
+  visibility: hidden;
 }
 
 .menu,
