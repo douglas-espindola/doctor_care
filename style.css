@@ -178,7 +178,7 @@ nav.scroll {
   background-color: var(--primary-color);
 }
 
-nav.scroll svg:nth-child(1) path {
+nav.scroll .logo path {
   fill: white;
 }
 
