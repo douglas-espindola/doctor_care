@@ -141,9 +141,15 @@ section .content p {
   stroke: var(--primary-color);
 }
 
-#navigation.scroll .logo path[fill*="00856F"] {
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
   fill: white;
 }
+
+#navigation.scroll button.open-menu path[stroke*="00856F"] {
+  stroke: white;
+}
+
 
 /*====NAVEGATION =======================================*/
 
@@ -166,14 +172,6 @@ nav div.wrapper {
 
 nav.scroll {
   background-color: var(--primary-color);
-}
-
-nav.scroll .logo path {
-  fill: white;
-}
-
-nav.scroll button path {
-  stroke: white;
 }
 
 nav button {
@@ -224,7 +222,6 @@ body.menu-expanded .menu {
   transform: translateY(0);
 
 }
-
 
 .menu ul:nth-child(1) {
   display: flex;
