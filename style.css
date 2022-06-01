@@ -43,7 +43,7 @@ body {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: min-content(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
